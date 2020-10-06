@@ -3,8 +3,9 @@ FROM 0x01be/xsser as xsser
 FROM 0x01be/openvas as openvas
 FROM 0x01be/dnsrecon as dnsrecon
 FROM 0x01be/theharvester as theharvester
+FROM 0x01be/golismero:build as build
 
-FROM alpine as build
+FROM alpine
 
 RUN apk add --no-cache --virtual golismero-build-dependencies \
     git \
