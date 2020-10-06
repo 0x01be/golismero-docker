@@ -58,7 +58,7 @@ RUN apk add --no-cache --virtual golismero-runtime-dependencies \
 
 ENV PATH ${PATH}:/opt/golismero/:/opt/sqlmap/:/opt/xsser/bin/:/opt/openvas/bin/:/opt/dnsrecon/:/opt/theharvester/bin/
 ENV LD_LIBRARY_PATH /usr/lib:/opt/openvas/lib/:/opt/gvm/lib
-ENV PYTHONPATH  /usr/lib/python3.8/site-packages/:/opt/dnsrecon/lib/python3.8/site-packages/:/opt/golismero/lib/python2.7/site-packesges/:/opt/xsser/lib/python3.8/site-packages/:/opt/theharvester/lib/python3.8/site-packages/
+ENV PYTHONPATH  /usr/lib/python3.8/site-packages/:/opt/dnsrecon/lib/python3.8/site-packages/:/opt/golismero/lib/python2.7/site-packages/:/opt/xsser/lib/python3.8/site-packages/:/opt/theharvester/lib/python3.8/site-packages/
 
 CMD "golismero.py"
 
